@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<cloud_data_centers>
+	<!-- High-performance cloud datacenter for heavy computation tasks -->
+	<datacenter>
+		<idleConsumption>500</idleConsumption>
+		<maxConsumption>8000</maxConsumption>
+		<isOrchestrator>true</isOrchestrator> <!-- Cloud orchestrator for global task management -->
+		<cores>500</cores> <!-- Large number of cores for parallel processing -->
+		<mips>60000</mips> <!-- High MIPS capacity -->
+		<ram>128000</ram> <!-- Large RAM capacity -->
+		<storage>10000000</storage> <!-- Very large storage capacity -->
+	</datacenter>
+</cloud_data_centers> 

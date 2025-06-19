@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<edge_devices>
+	<!-- Ground IoT Sensors - Low power, data collection only -->
+	<device>
+		<connectivity>cellular</connectivity>
+		<mobility>false</mobility>
+		<speed>0</speed>
+		<minPauseDuration>0</minPauseDuration>
+		<maxPauseDuration>0</maxPauseDuration>
+		<minMobilityDuration>0</minMobilityDuration>
+		<maxMobilityDuration>0</maxMobilityDuration>
+		<battery>true</battery>
+		<percentage>30</percentage> <!-- Reduced sensor percentage, increased computing devices -->
+		<batteryCapacity>50.0</batteryCapacity>
+		<initialBatteryLevel>100</initialBatteryLevel>
+		<idleConsumption>0.05</idleConsumption>
+		<maxConsumption>0.3</maxConsumption>
+		<isOrchestrator>false</isOrchestrator>
+		<generateTasks>true</generateTasks> <!-- Sensors generate tasks -->
+		<cores>1</cores>
+		<mips>500</mips> <!-- Very low computing power -->
+		<ram>512</ram>
+		<storage>1000</storage>
+	</device>
+	
+	<!-- UAV Devices - Mobile, medium computing power, can process tasks -->
+	<device>
+		<connectivity>wifi</connectivity>
+		<mobility>true</mobility>
+		<speed>20</speed> <!-- 20 m/s = 72 km/h typical UAV speed -->
+		<minPauseDuration>30</minPauseDuration>
+		<maxPauseDuration>120</maxPauseDuration>
+		<minMobilityDuration>60</minMobilityDuration>
+		<maxMobilityDuration>300</maxMobilityDuration>
+		<battery>true</battery>
+		<percentage>25</percentage> <!-- Increased UAV percentage as edge computing nodes -->
+		<batteryCapacity>200.0</batteryCapacity>
+		<initialBatteryLevel>100</initialBatteryLevel>
+		<idleConsumption>3.0</idleConsumption>
+		<maxConsumption>20.0</maxConsumption>
+		<isOrchestrator>true</isOrchestrator> <!-- UAV can serve as orchestrator -->
+		<generateTasks>false</generateTasks> <!-- UAVs process tasks -->
+		<cores>4</cores>
+		<mips>15000</mips>
+		<ram>8000</ram>
+		<storage>64000</storage>
+	</device>
+	
+	<!-- Ground Base Station Equipment - Fixed, high computing power -->
+	<device>
+		<connectivity>ethernet</connectivity>
+		<mobility>false</mobility>
+		<speed>0</speed>
+		<minPauseDuration>0</minPauseDuration>
+		<maxPauseDuration>0</maxPauseDuration>
+		<minMobilityDuration>0</minMobilityDuration>
+		<maxMobilityDuration>0</maxMobilityDuration>
+		<battery>false</battery> <!-- Connected to power grid -->
+		<percentage>20</percentage> <!-- Increased base station percentage -->
+		<batteryCapacity>0</batteryCapacity>
+		<initialBatteryLevel>0</initialBatteryLevel>
+		<idleConsumption>10.0</idleConsumption>
+		<maxConsumption>80.0</maxConsumption>
+		<isOrchestrator>true</isOrchestrator> <!-- Can orchestrate tasks -->
+		<generateTasks>false</generateTasks>
+		<cores>16</cores>
+		<mips>40000</mips>
+		<ram>32000</ram>
+		<storage>500000</storage>
+	</device>
+	
+	<!-- Mobile Ground Vehicles with computing capabilities -->
+	<device>
+		<connectivity>cellular</connectivity>
+		<mobility>true</mobility>
+		<speed>15</speed> <!-- 15 m/s = 54 km/h -->
+		<minPauseDuration>60</minPauseDuration>
+		<maxPauseDuration>300</maxPauseDuration>
+		<minMobilityDuration>120</minMobilityDuration>
+		<maxMobilityDuration>600</maxMobilityDuration>
+		<battery>true</battery>
+		<percentage>15</percentage>
+		<batteryCapacity>300.0</batteryCapacity>
+		<initialBatteryLevel>100</initialBatteryLevel>
+		<idleConsumption>5.0</idleConsumption>
+		<maxConsumption>30.0</maxConsumption>
+		<isOrchestrator>false</isOrchestrator>
+		<generateTasks>true</generateTasks> <!-- Generate navigation/monitoring tasks -->
+		<cores>8</cores>
+		<mips>25000</mips>
+		<ram>16000</ram>
+		<storage>128000</storage>
+	</device>
+	
+	<!-- High-end Ground Computing Nodes (Research stations, etc.) -->
+	<device>
+		<connectivity>ethernet</connectivity>
+		<mobility>false</mobility>
+		<speed>0</speed>
+		<minPauseDuration>0</minPauseDuration>
+		<maxPauseDuration>0</maxPauseDuration>
+		<minMobilityDuration>0</minMobilityDuration>
+		<maxMobilityDuration>0</maxMobilityDuration>
+		<battery>false</battery>
+		<percentage>10</percentage>
+		<batteryCapacity>0</batteryCapacity>
+		<initialBatteryLevel>0</initialBatteryLevel>
+		<idleConsumption>20.0</idleConsumption>
+		<maxConsumption>150.0</maxConsumption>
+		<isOrchestrator>true</isOrchestrator>
+		<generateTasks>false</generateTasks>
+		<cores>32</cores>
+		<mips>60000</mips>
+		<ram>64000</ram>
+		<storage>1000000</storage>
+	</device>
+</edge_devices> 

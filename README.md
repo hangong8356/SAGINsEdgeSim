@@ -1,4 +1,3 @@
-# -ISCC-SAGINs-PureEdgeSim
 # PureEdgeSim-SAGIN: Space-Air-Ground Integrated Network Edge Computing Simulator
 
 

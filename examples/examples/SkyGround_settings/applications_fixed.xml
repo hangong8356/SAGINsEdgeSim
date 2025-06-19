@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<applications>
+	<!-- IoT Data Collection Application -->
+	<application name="IoT_Data_Collection">
+		<type>sensing</type>
+		<rate>6</rate>
+		<usage_percentage>30</usage_percentage>
+		<latency>8.0</latency>
+		<container_size>10</container_size>
+		<request_size>5</request_size>
+		<results_size>2</results_size>
+		<task_length>100</task_length>
+	</application>
+	
+	<!-- Emergency Response Application -->
+	<application name="Emergency_Response">
+		<type>real-time</type>
+		<rate>2</rate>
+		<usage_percentage>8</usage_percentage>
+		<latency>1.5</latency>
+		<container_size>50</container_size>
+		<request_size>30</request_size>
+		<results_size>10</results_size>
+		<task_length>800</task_length>
+	</application>
+	
+	<!-- UAV Navigation and Control -->
+	<application name="UAV_Navigation">
+		<type>real-time</type>
+		<rate>4</rate>
+		<usage_percentage>12</usage_percentage>
+		<latency>2.0</latency>
+		<container_size>30</container_size>
+		<request_size>20</request_size>
+		<results_size>8</results_size>
+		<task_length>500</task_length>
+	</application>
+	
+	<!-- Environmental Monitoring -->
+	<application name="Environmental_Monitoring">
+		<type>sensing</type>
+		<rate>8</rate>
+		<usage_percentage>25</usage_percentage>
+		<latency>15.0</latency>
+		<container_size>8</container_size>
+		<request_size>3</request_size>
+		<results_size>1</results_size>
+		<task_length>50</task_length>
+	</application>
+	
+	<!-- Satellite Earth Observation -->
+	<application name="Satellite_Imaging">
+		<type>processing</type>
+		<rate>3</rate>
+		<usage_percentage>15</usage_percentage>
+		<latency>45.0</latency>
+		<container_size>100</container_size>
+		<request_size>200</request_size>
+		<results_size>50</results_size>
+		<task_length>2000</task_length>
+	</application>
+	
+	<!-- Traffic Management -->
+	<application name="Traffic_Management">
+		<type>real-time</type>
+		<rate>5</rate>
+		<usage_percentage>10</usage_percentage>
+		<latency>3.5</latency>
+		<container_size>40</container_size>
+		<request_size>25</request_size>
+		<results_size>12</results_size>
+		<task_length>300</task_length>
+	</application>
+</applications> 

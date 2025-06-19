@@ -20,14 +20,11 @@
 ```mermaid
 graph TD
   IoT[IoT Sensors] --> UAV[UAVs]
+  UAV--> UAV[UAVs]
   UAV --> BS[Base Stations]
+  BS--> BS[Base Stations]
   BS --> SAT[LEO Satellites]
   SAT --> CLOUD[Cloud Server]
-  BS --> CLOUD
-  UAV --> BS
-  BS --> BS
-  SAT --> SAT
-```
 
 ## Node Configuration (from config files)
 

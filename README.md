@@ -20,19 +20,19 @@
 ```mermaid
 graph TD
   IoT[IoT Sensors] --> UAV[UAVs]
-  UAV--> UAV[UAVs]
+  UAV --> UAV[UAVs]
   UAV --> BS[Base Stations]
-  BS--> BS[Base Stations]
+  BS --> BS[Base Stations]
   BS --> SAT[LEO Satellites]
   SAT --> CLOUD[Cloud Server]
-
+```
 ## Node Configuration (from config files)
 
 | Node Type   | Count | CPU/Cores | MIPS   | RAM(GB) | Storage(GB) | Battery/Power(Wh/W)   | Bandwidth(Mbps) | Config File         |
 |-------------|-------|-----------|--------|---------|-------------|----------------------|-----------------|---------------------|
 | Sensor      | 50    | 1         | 1200   | 0.5     | 1           | 50Wh, 0.01~0.5W      | 10              | edge_devices.xml    |
 | UAV         | 20    | 4         | 30000  | 8       | 64          | 200Wh, 8~150W        | 100             | edge_devices.xml    |
-| Base Station| 5     | 8         | 30000  | 32      | 500         | 50~200W              | 1000            | edge_datacenters.xml|
+| Base Station| 5     | 8         | 30000  | 32      | 500         | 30~300W              | 1000            | edge_datacenters.xml|
 | Satellite   | 3     | 4         | 20000  | 16      | 128         | 30~100W              | 1000            | edge_datacenters.xml|
 | Cloud       | 1     | 500       | 60000  | 128     | 10000       | 500~8000W            | 10000           | cloud.xml           |
 
